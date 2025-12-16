@@ -141,7 +141,7 @@ const Home = () => {
               <Box sx={{ width: "75%" }}>{renderContentSection()}</Box>
               <Box
                 sx={{
-                  width: "25%",
+                  width: "24%",
                   display: "flex",
                   flexDirection: "column",
                   gap: 2,

@@ -188,7 +188,7 @@ const BroadbandPostPaidGetAddOns = () => {
                     height: "100%",
                     boxShadow: "0px 3px 3px #0000004A",
                     overflow: "hidden",
-                    width: "97%",
+                    maxWidth: "97%",
                 }}
             >
                 <BroadbandNavbar
