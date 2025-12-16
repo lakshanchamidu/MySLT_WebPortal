@@ -178,7 +178,7 @@ const BroadbandPostPaidGetAddOns = () => {
             <Box
                 sx={{
                     display: "flex",
-                    gap: 1,
+                    gap: 0,
                     flexDirection: "column",
                     alignItems: "center",
                     backgroundColor: "#FFFFFF",
@@ -198,6 +198,37 @@ const BroadbandPostPaidGetAddOns = () => {
                     selected={selectedItem}
                 />
 
+                {/* Scroll indicator arrows */}
+                <Box
+                    sx={{
+                        display: { xs: "flex", xl: "none" },
+                        justifyContent: "flex-end",
+                        alignItems: "center",
+                        width: "100%",
+                        pr: 5,
+                        pt: 0,
+                        "@media (min-width: 1678px)": {
+                            display: "none",
+                        },
+                    }}
+                >
+                    <Typography
+                        sx={{
+                            fontSize: 22,
+                            color: "#0056A2",
+                            fontWeight: "bold",
+                            pt: 0,
+                            animation: "slideRight 1.5s infinite",
+                            "@keyframes slideRight": {
+                                "0%, 100%": { transform: "translateX(0)" },
+                                "50%": { transform: "translateX(8px)" },
+                            },
+                        }}
+                    >
+                        ›››
+                    </Typography>
+                </Box>
+
                 <Box
                     ref={scrollRef}
                     onScroll={handleScroll}
@@ -207,9 +238,11 @@ const BroadbandPostPaidGetAddOns = () => {
                     onMouseLeave={() => setIsDragging(false)}
                     sx={{
                         display: "flex",
-                        gap: 1.5,
+                        gap: 2,
                         width: "100%",
-                        padding: 1,
+                        pt: 0,
+                        pb: 3,
+                        px: 0, //3
                         overflowX: "auto",
                         flexDirection: "row",
                         cursor: isDragging ? "grabbing" : "grab",
@@ -218,6 +251,9 @@ const BroadbandPostPaidGetAddOns = () => {
                         },
                         userSelect: "none",
                         scrollbarWidth: "none",
+                        "@media (min-width: 1536px)": {
+                            pt: 3,
+                        },
                     }}
                 >
                     {selectedItem.trim() === "LMS" ||
