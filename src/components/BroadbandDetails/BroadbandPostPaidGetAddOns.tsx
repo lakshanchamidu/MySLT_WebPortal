@@ -183,7 +183,7 @@ const BroadbandPostPaidGetAddOns = () => {
                     alignItems: "center",
                     backgroundColor: "#FFFFFF",
                     color: "#FFFFFF1A",
-                    padding: 1,
+                    padding: 2,
                     borderRadius: "10px",
                     height: "100%",
                     boxShadow: "0px 3px 3px #0000004A",
@@ -242,7 +242,6 @@ const BroadbandPostPaidGetAddOns = () => {
                         width: "100%",
                         pt: 0,
                         pb: 3,
-                        px: 0, //3
                         overflowX: "auto",
                         flexDirection: "row",
                         cursor: isDragging ? "grabbing" : "grab",
