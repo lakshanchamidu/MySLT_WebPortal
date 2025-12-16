@@ -55,7 +55,7 @@ const BroadbandNavbar = ({ navbarItems, type, selected, onSelected }: BroadbandN
         alignItems: "center",
         width: "100%",
         color: "#0056A2",
-        backgroundColor: "#ffffff",
+        backgroundColor: "#F5F5F5",
         border: "1px solid #0056A252",
         borderRadius: "10px",
         overflowX:  'auto', 
