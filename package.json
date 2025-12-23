@@ -24,7 +24,7 @@
     "@mui/x-charts": "^7.21.0",
     "@mui/x-date-pickers": "^7.22.3",
     "@react-oauth/google": "^0.12.2",
-    "axios": "^1.7.9",
+    "axios": "^1.13.2",
     "dayjs": "^1.11.13",
     "framer-motion": "^12.9.2",
     "i18next": "^25.2.1",
